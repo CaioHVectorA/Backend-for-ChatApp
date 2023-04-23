@@ -14,7 +14,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cors())
 app.use(routes)
 const io = new Server(serverHttp,{cors: {
-    origin: 'http://localhost:3000',
+    origin: 'https://chatonlineapp.netlify.app',
     credentials: true
   }
 })
